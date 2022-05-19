@@ -72,7 +72,7 @@ func NewTimerModel(
 		countdownView: ternary(
 			item.HasUpcomingFsale(),
 			countdownFormat(fsale.Sub(time.Now().Local())),
-			"00:00:01",
+			"00:00:00",
 		),
 		msgch: make(chan tea.Msg, 1),
 		tasks: []Task{
