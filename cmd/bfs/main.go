@@ -21,7 +21,7 @@ var version string
 var (
 	stateFilename = flag.String("state", "bfs_state.json", "state file name")
 	delay         = flag.Duration("d", 0, "delay antar request saat checkout")
-	subFSTime     = flag.Duration("sub", 0, "kurangi waktu flash sale")
+	subFSTime     = flag.Duration("sub", 6, "kurangi waktu flash sale")
 )
 
 // https://github.com/golang/go/issues/20455#issuecomment-342287698
